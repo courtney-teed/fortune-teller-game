@@ -3,8 +3,43 @@
 	padding: 0;
 	border: 0;
 }
-
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
 	display:block;
 }
-
+body {
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+header {
+	width: 100%;
+}
+.blue, .orange, .yellow, .red {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.blue {
+	background-color: blue;
+}
+.orange {
+	background-color: orange;
+}
+.yellow {
+	background-color: yellow;
+}
+.red {
+	background-color: red;
+}
+h2 {
+	color: #000000;
+}
+footer {
+	width: 100%;
+}

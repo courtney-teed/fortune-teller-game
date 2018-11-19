@@ -6,40 +6,95 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
 	display:block;
 }
+:focus {
+	outline: 0;
+}
 body {
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 }
 main {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	height: 100vh;
+	justify-content: center;
 }
 header {
 	width: 100%;
 }
-.blue, .orange, .yellow, .red {
-	width: 50%;
-	height: 50%;
+article {
+	width: 80%;
+	height: 90vh;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border: 2px solid #efefef;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 5px 5px 10px 2px rgba(203,203,203,0.5);
+	box-shadow: 5px 5px 10px 2px rgba(203,203,203,0.2);
 }
-.blue {
-	background-color: blue;
+.top, .bottom {
+	display: flex;
+	padding: 2px;
 }
-.orange {
-	background-color: orange;
+.rotate {
+	transform: rotate(45deg);
 }
-.yellow {
-	background-color: yellow;
+.blue-section {
+	-webkit-border-radius: 15px 0 0 0;
+	border-radius: 15px 0 0 0;
+	margin-right: 2px;
 }
-.red {
-	background-color: red;
+.orange-section {
+	-webkit-border-radius: 0 15px 0 0;
+	border-radius: 0 15px 0 0;
+	margin-left: 2px;
 }
-h2 {
-	color: #000000;
+.yellow-section {
+	-webkit-border-radius: 0 0 0 15px;
+	border-radius: 0 0 0 15px;
+	margin-right: 2px;
+}
+.red-section {
+	-webkit-border-radius: 0 0 15px 0;
+	border-radius: 0 0 15px 0;
+	margin-left: 2px;
+}
+button {
+	height: 40px;
+	width: 100px;
+	transform: rotate(-45deg);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+	color: #f2f2f2;
+}
+.blue-button {
+	background-color: #1b264f;
+}
+.orange-button {
+	background-color: #a3320b;
+}
+.yellow-button {
+	background-color: #e6af2e;
+}
+.red-button {
+	background-color: #6b0504;
+}
+.colorChange {
+	background-color: green;
+	transition: all 1s;
 }
 footer {
 	width: 100%;
 }
+

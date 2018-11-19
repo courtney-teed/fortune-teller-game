@@ -11,6 +11,8 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -20,31 +22,39 @@
 
 	<body>
 
-			<header>
-				<h1>Fortune Teller Game</h1>
+			<header id="header">
+				<p>Fortune Teller Game</p>
 				<p>Pick a color to begin!</p>
 			</header>
 
 			<main>
-				<section class="blue">
-					<h2>Blue</h2>
-				</section>
-				<section class="orange">
-					<h2>Orange</h2>
-				</section>
-				<section class="yellow">
-					<h2>Yellow</h2>
-				</section>
-				<section class="red">
-					<h2>Red</h2>
-				</section>
+				<article id="colorGrid">
+					<div class="rotate">
+						<div class="top">
+							<section class="blue-section">
+								<button class="blue-button">Blue</button>
+							</section>
+							<section class="orange-section">
+								<button class="orange-button">Orange</button>
+							</section>
+						</div>
+						<div class="bottom">
+							<section class="yellow-section">
+								<button class="yellow-button">Yellow</button>
+							</section>
+							<section class="red-section">
+								<button class="red-button">Red</button>
+							</section>
+						</div>
+					</div>
+				</article>
 			</main>
 
 			<footer>
-				<p>Fortune Teller Game brought to you by Courtney Teed</p>
+				<p>Fortune Teller Game brought to you by Courtney Teed &copy; 2018</p>
 			</footer>
 
-		<script src="src/main.js"></script>
+		<script src="lib/main.js"></script>
 
 	</body>
 

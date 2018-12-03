@@ -93,10 +93,24 @@ button {
 .red-button, .four-button, .eight-button {
 	background-color: #6b0504;
 }
-.colorChange {
-	background-color: green;
+.colorChange1 {
+	background-color: gray;
 	transition: all 1s;
-	transform: rotate(405deg); 
+	transform: rotate(405deg);
+}
+.rotate {
+	transition: all 1s;
+	transform: rotate(45deg);
+}
+.colorChange2 {
+	background-color: red;
+	transition: all 1s;
+	transform: rotate(405deg);
+}
+.colorChange3 {
+	background-color: red;
+	transition: all 1s;
+	transform: rotate(810deg);
 }
 .hide {
 	display: none;

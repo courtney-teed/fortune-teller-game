@@ -9,7 +9,7 @@ const numberSection2 = document.querySelector('#colorGrid3');
 function wrapper() {
 
   const transition1 = () => {
-    colorSection.classList.toggle('colorChange');
+    colorSection.classList.toggle('colorChange1');
   };
 
   const loopThrough = () => {
@@ -37,7 +37,9 @@ function wrapper() {
 function wrapper2() {
 
   const transition2 = () => {
-    numberSection1.classList.toggle('colorChange');
+    numberSection1.classList.add('rotate');
+    numberSection1.classList.toggle('animated');
+    numberSection1.classList.toggle('flash');
   };
 
   const loopThrough2 = () => {
@@ -67,7 +69,8 @@ function wrapper2() {
 function wrapper3() {
 
   const transition3 = () => {
-    numberSection2.classList.toggle('colorChange');
+    numberSection2.classList.toggle('colorChange2');
+    numberSection2.classList.toggle('colorChange3');
   };
 
   const loopThrough3 = () => {

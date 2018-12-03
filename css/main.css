@@ -98,14 +98,10 @@ button {
 	transition: all 1s;
 	transform: rotate(405deg);
 }
-.rotate {
-	transition: all 1s;
-	transform: rotate(45deg);
-}
 .colorChange2 {
-	background-color: red;
+	background-color: purple;
 	transition: all 1s;
-	transform: rotate(405deg);
+	transform: rotate(608deg);
 }
 .colorChange3 {
 	background-color: red;

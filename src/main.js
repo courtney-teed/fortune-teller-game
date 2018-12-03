@@ -37,9 +37,7 @@ function wrapper() {
 function wrapper2() {
 
   const transition2 = () => {
-    numberSection1.classList.add('rotate');
-    numberSection1.classList.toggle('animated');
-    numberSection1.classList.toggle('flash');
+    numberSection1.classList.toggle('colorChange2');
   };
 
   const loopThrough2 = () => {

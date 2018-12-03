@@ -13,7 +13,6 @@ body {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
-
 main {
 	display: flex;
 	justify-content: center;
@@ -53,27 +52,22 @@ section {
 	display: flex;
 	padding: 2px;
 }
-/*
-.rotate {
-	transform: rotate(45deg);
-}
-*/
-.blue-section {
+.blue-section, .one-section, .five-section {
 	-webkit-border-radius: 15px 0 0 0;
 	border-radius: 15px 0 0 0;
 	margin-right: 2px;
 }
-.orange-section {
+.orange-section, .two-section, .six-section {
 	-webkit-border-radius: 0 15px 0 0;
 	border-radius: 0 15px 0 0;
 	margin-left: 2px;
 }
-.yellow-section {
+.yellow-section, .three-section, .seven-section {
 	-webkit-border-radius: 0 0 0 15px;
 	border-radius: 0 0 0 15px;
 	margin-right: 2px;
 }
-.red-section {
+.red-section, .four-section, .eight-section {
 	-webkit-border-radius: 0 0 15px 0;
 	border-radius: 0 0 15px 0;
 	margin-left: 2px;
@@ -87,16 +81,16 @@ button {
 	cursor: pointer;
 	color: #f2f2f2;
 }
-.blue-button {
+.blue-button, .one-button, .five-button {
 	background-color: #1b264f;
 }
-.orange-button {
+.orange-button, .two-button, .six-button {
 	background-color: #a3320b;
 }
-.yellow-button {
+.yellow-button, .three-button, .seven-button {
 	background-color: #e6af2e;
 }
-.red-button {
+.red-button, .four-button, .eight-button {
 	background-color: #6b0504;
 }
 .colorChange {
@@ -108,12 +102,13 @@ button {
 	display: none;
 }
 .show {
-	display: block;
+	display: flex;
 }
 footer {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
+	background-color: #ffffff;
 }
 /* sticky footer*/
 

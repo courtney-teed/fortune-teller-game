@@ -14,6 +14,10 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+		<link rel="shortcut icon" href="images/ct-fave-3.png" type="image/png" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -24,8 +28,34 @@
 	<body>
 
 			<header id="header">
-				<p>Fortune Teller Game</p>
-				<p>Pick a color to begin!</p>
+				<button class="hamburger">&#9776;</button>
+				<button class="cross">&#735;</button>
+
+				<a href="index.html"><img src="images/ct-logo.png" alt="Courtney Teed logo" title="Courtney Teed logo" /></a>
+
+				<!--desktop menu -->
+
+				<nav id="desktop-menu">
+					<ul>
+						<li><a href="index.html">Start Over</a></li>
+						<li><a href="http://courtneyteed.com/#bio-page" target="_blank">About the Creator</a></li>
+						<li><a href="CT-resume-2018.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</nav>
+
+				<!--mobile menu -->
+
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Start Over</a></li>
+						<li><a href="http://courtneyteed.com/#bio-page" target="_blank">About the Creator</a></li>
+						<li><a href="CT-resume-2018.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</div>
+
+				<h1>Welcome to Courtney Teed's Fortune Teller Game</h1>
+				<p>Please pick a color to begin!</p>
+
 			</header>
 
 		<div class="page-content">
@@ -87,8 +117,14 @@
 							</section>
 						</div>
 				</article>
-				<article id ="fortune-wrapper">
-					<p><span></span></p>
+				<article id="fortune-section" class="hide">
+					<section id="fortune-wrapper">
+						<p><span></span></p>
+					</section>
+					<section id="generator-button">
+						<button id="fortune-button">Shake Ball</button>
+						<a href="index.html">Reset</a>
+					</section>
 				</article>
 
 
@@ -96,7 +132,7 @@
 		</div>
 
 			<footer class="footer">
-				<p>Fortune Teller Game brought to you by Courtney Teed &copy; 2018</p>
+				<p>&copy; 2018 Courtney Teed</p>
 			</footer>
 
 		<script src="lib/main.js"></script>

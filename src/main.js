@@ -1,3 +1,24 @@
+//hamburger mobile menu
+$( document ).ready(function() {
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "fast", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "fast", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+});
+
+
+
+
 const colorButton = document.querySelectorAll('#colorGrid section button');
 const numberButton1 = document.querySelectorAll('#colorGrid2 section button');
 const numberButton2 = document.querySelectorAll('#colorGrid3 section button');
@@ -5,6 +26,12 @@ const numberButton2 = document.querySelectorAll('#colorGrid3 section button');
 const colorSection = document.querySelector('#colorGrid');
 const numberSection1 = document.querySelector('#colorGrid2');
 const numberSection2 = document.querySelector('#colorGrid3');
+
+
+
+
+
+
 
 function wrapper() {
 
@@ -31,6 +58,11 @@ function wrapper() {
   };
   loopThrough();
 };
+
+
+
+
+
 
 
 
@@ -64,6 +96,10 @@ function wrapper2() {
 
 
 
+
+
+
+
 function wrapper3() {
 
   const transition3 = () => {
@@ -85,15 +121,22 @@ function wrapper3() {
     setTimeout(function() {
       numberSection2.classList.add('hide');
       numberSection2.classList.remove('show');
-      /*
       //then tell fortune to appear here!
-      fortune.Container.classList.add('class-name-here')
-      */
+
+
     },numberValue * 2000);
 
   };
   loopThrough3();
 };
+
+
+
+
+
+
+
+
 
 
 
@@ -109,4 +152,7 @@ for(let i = 0; i < numberButton1.length; i++) {
 for(let i = 0; i < numberButton2.length; i++) {
   numberButton2[i].addEventListener('click', wrapper3);
 };
+
+
+
 

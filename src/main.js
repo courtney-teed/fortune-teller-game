@@ -1,4 +1,4 @@
-//hamburger mobile menu
+//hamburger menu
 $( document ).ready(function() {
 $( ".cross" ).hide();
 $( ".menu" ).hide();
@@ -15,7 +15,7 @@ $( ".hamburger" ).show();
 });
 });
 });
-
+//end hamburger menu
 
 
 

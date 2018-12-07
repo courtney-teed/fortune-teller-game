@@ -25,6 +25,9 @@ header img {
 	width: 40px;
 	padding: 5px 15px;
 }
+h1, p {
+	color: #323232;
+}
 #desktop-menu {
 	display: none;
 }
@@ -142,11 +145,11 @@ h1, p {
 main {
 	display: flex;
 	justify-content: center;
+	margin-top: 270px;
 }
 article {
 	width: 500px;
 	height: 500px;
-	margin-top: 140px;
 	margin-bottom: 140px;
 	background-color: #f2f2f2;
 	display: flex;
@@ -237,6 +240,9 @@ button {
 .show {
 	display: flex;
 }
+#fortune-section {
+	background-image: url('images/background.jpg');
+}
 #fortune-wrapper {
 	width: 300px;
 	margin: auto;
@@ -271,13 +277,41 @@ button {
 	transition: opacity 3s ease-out;
 }
 footer {
-	position: fixed;
 	width: 100%;
+	background-color: #0f7173;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: fixed;
 	bottom: 0;
-	background-color: #ffffff;
+	display: flex;
 }
-/* sticky footer*/
-
+#social {
+	display: flex;
+	justify-content: space-around;
+	width: 15%;
+	padding-left: 1%;
+}
+#social img {
+	width: 15px;
+	padding: 0 0.5% 1% 0.5%;
+}
+.grow {
+	transition: all .4s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.2);
+}
+#copyright {
+	display: flex;
+	justify-content: flex-end;
+	width: 85%;
+	padding-right: 1%;
+}
+#copyright p {
+	font-size: .8em;
+	color: #ffffff;
+}
 
 /* MEDIA QUERIES*/
 @media (min-width: 800px) {

@@ -11,6 +11,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	background: rgb(15,113,115);
+	background: linear-gradient(180deg, rgba(15,113,115,1) 0%, rgba(255,255,255,1) 100%);
 }
 header {
 	background-color: #0f7173;
@@ -127,7 +130,8 @@ nav ul li a:hover {
 }
 .menu ul li a {
 	text-decoration:none;
-	margin: 0px; color:#0f7173;
+	margin: 0px;
+	color: #0f7173;
 }
 .menu ul li a:hover {
 	color: #0f7173; 
@@ -162,6 +166,8 @@ article {
 	align-items: center;
 	-webkit-border-radius: 15px 15px 15px 15px;
 	border-radius: 15px 15px 15px 15px;
+	-webkit-box-shadow: 5px 5px 10px 5px rgba(15, 113, 115, 0.5);
+	box-shadow: 5px 5px 10px 5px rgba(15, 113, 115, 0.5);
 	transform: rotate(45deg);
 	transition: all 1s;
 }
@@ -174,8 +180,6 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	-webkit-box-shadow: 5px 5px 10px 2px rgba(203,203,203,0.5);
-	box-shadow: 5px 5px 10px 2px rgba(203,203,203,0.2);
 }
 .top, .bottom {
 	display: flex;
@@ -202,8 +206,8 @@ section {
 	margin-left: 2px;
 }
 button {
-	height: 40px;
-	width: 100px;
+	height: 25px;
+	width: 60px;
 	transform: rotate(-45deg);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -223,12 +227,12 @@ button {
 	background-color: #6b0504;
 }
 .colorChange1 {
-	background-color: gray;
+	background-color: #e88d67;
 	transition: all 1s;
 	transform: rotate(405deg);
 }
 .colorChange2 {
-	background-color: purple;
+	background-color: #656565;
 	transition: all 1s;
 	transform: rotate(608deg);
 }
@@ -236,6 +240,14 @@ button {
 	background-color: red;
 	transition: all 1s;
 	transform: rotate(810deg);
+}
+.fade-out {
+	opacity: 0;
+	transition: all 1s;
+}
+.move-up {
+	transform: translateY(-60px);
+	transition: all 2s;
 }
 .hide {
 	display: none;
@@ -249,8 +261,8 @@ button {
 	height: 90vh;
 }
 #fortune-wrapper {
-	width: 300px;
-	height: 300px;
+	width: 500px;
+	height: 500px;
 	margin: auto;
 }
 #fortune-wrapper p {
@@ -320,6 +332,10 @@ footer {
 		width: 150px;
 		height: 150px;
 	}
+	button {
+		height: 30px;
+		width: 70px;
+	}
 }
 @media (min-width: 800px) {
 	header img {
@@ -350,6 +366,11 @@ footer {
 	section {
 		width: 200px;
 		height: 200px;
+	}
+	button 
+	{
+		height: 40px;
+		width: 100px;
 	}
 }
 

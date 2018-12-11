@@ -17,8 +17,9 @@ $( ".hamburger" ).show();
 });
 //end hamburger menu
 
-
-
+//variables for page header
+const gameHeading = document.querySelector('#gameHeading');
+const gameInstruction = document.querySelector('#gameInstruction');
 //variables for fortune teller
 const colorButton = document.querySelectorAll('#colorGrid section button');
 const numberButton1 = document.querySelectorAll('#colorGrid2 section button');
@@ -28,12 +29,11 @@ const colorSection = document.querySelector('#colorGrid');
 const numberSection1 = document.querySelector('#colorGrid2');
 const numberSection2 = document.querySelector('#colorGrid3');
 
+const mainBody = document.querySelector('#main');
+
 //variables for fortune portion
 const fortuneSection = document.querySelector('#fortune-section');
 const yourFortune = document.querySelector('#fortune-wrapper p span');
-
-
-
 
 
 
@@ -65,7 +65,10 @@ var functionAppear = function() {
 function wrapper() {
 
   const transition1 = () => {
+    mainBody.classList.add('move-up');
     colorSection.classList.toggle('colorChange1');
+    gameHeading.classList.add('fade-out');
+    gameInstruction.classList.add('fade-out');
   };
 
   const loopThrough = () => {
@@ -132,7 +135,6 @@ function wrapper2() {
 function wrapper3() {
 
   const transition3 = () => {
-    numberSection2.classList.toggle('colorChange2');
     numberSection2.classList.toggle('colorChange3');
   };
 
@@ -150,7 +152,7 @@ function wrapper3() {
     setTimeout(function() {
       numberSection2.classList.add('hide');
       numberSection2.classList.remove('show');
-      //then tell fortune to appear here!
+      //then tell fortune to appear
       fortuneSection.classList.remove('hide');
       fortuneSection.classList.add('show');
       functionAppear();

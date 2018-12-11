@@ -9,4 +9,7 @@ http://fortunecookieapi.herokuapp.com/v1/fortunes
 
 https://www.w3schools.com/cssref/css3_pr_transform.asp
 
+http://css3generator.com/
+
+https://cssgradient.io/
 

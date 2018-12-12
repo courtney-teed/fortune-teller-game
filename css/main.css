@@ -257,35 +257,36 @@ button {
 }
 #fortune-section {
 	background-image: url('../images/background.jpg');
-	width: 100%;
-	height: 90vh;
 }
 #fortune-wrapper {
-	width: 500px;
-	height: 500px;
-	margin: auto;
+	background-image: url('../images/background.jpg');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #fortune-wrapper p {
 	color: #0f7173;
-	font-weight: 700;
-	width: 150px;
-	height: 150px;
+	width: 250px;
+	height: 250px;
 	border-radius: 100px;
 	text-align: center;
-	margin: 0;
+	transform: rotate(-45deg);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-top: 20px;
 }
 #fortune-wrapper p span {
 	opacity: 0;
-	font-size: 4rem;
+	font-size: 1.5rem;
 }
 .fortune-show {
 	opacity: 1 !important;
 	transition: opacity 3s ease-out;
 }
 footer {
-	width: 100%;
-	background-color: #0f7173;
 	color: #ffffff;
+	background-color: #0f7173;
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	position: fixed;
@@ -336,6 +337,13 @@ footer {
 		height: 30px;
 		width: 70px;
 	}
+	#fortune-wrapper p {
+		width: 300px;
+		height: 300px;
+	}
+	#fortune-wrapper p span {
+		font-size: 2rem;
+	}
 }
 @media (min-width: 800px) {
 	header img {
@@ -367,10 +375,16 @@ footer {
 		width: 200px;
 		height: 200px;
 	}
-	button 
-	{
+	button {
 		height: 40px;
 		width: 100px;
+	}
+	#fortune-wrapper p {
+		width: 350px;
+		height: 350px;
+	}
+	#fortune-wrapper p span {
+		font-size: 2.5rem;
 	}
 }
 

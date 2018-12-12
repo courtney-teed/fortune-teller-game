@@ -35,9 +35,6 @@ const mainBody = document.querySelector('#main');
 const fortuneSection = document.querySelector('#fortune-section');
 const yourFortune = document.querySelector('#fortune-wrapper p span');
 
-
-
-
 //placeholder text and append to yourFortune paragraph
 var fortuneTextPlaceholder = document.createTextNode('');
 yourFortune.appendChild(fortuneTextPlaceholder);
@@ -55,12 +52,6 @@ var functionAppear = function() {
   //add class to fortune
   yourFortune.classList.add('fortune-show');
 };
-
-
-
-
-
-
 
 function wrapper() {
 
@@ -91,13 +82,6 @@ function wrapper() {
   loopThrough();
 };
 
-
-
-
-
-
-
-
 function wrapper2() {
 
   const transition2 = () => {
@@ -125,12 +109,6 @@ function wrapper2() {
   };
   loopThrough2();
 };
-
-
-
-
-
-
 
 function wrapper3() {
 
@@ -163,14 +141,6 @@ function wrapper3() {
   loopThrough3();
 };
 
-
-
-
-
-
-
-
-
 //event 1
 for(let i = 0; i < colorButton.length; i++) {
   colorButton[i].addEventListener('click', wrapper);
@@ -183,7 +153,3 @@ for(let i = 0; i < numberButton1.length; i++) {
 for(let i = 0; i < numberButton2.length; i++) {
   numberButton2[i].addEventListener('click', wrapper3);
 };
-
-
-
-
